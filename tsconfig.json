@@ -17,7 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ],
-    
+    ]
   },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts",
+    "src/app/app.module.ts"
+],
+"include": [
+    "app/**/*.ts"
+],
 }
