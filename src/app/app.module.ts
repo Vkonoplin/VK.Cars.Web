@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared/shared.module';
+import { AdalService, AdalGuard } from 'adal-angular4';
 
 @NgModule({
   declarations: [
@@ -12,9 +12,9 @@ import {SharedModule} from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
+    SharedModule
   ],
-  providers: [],
+  providers: [AdalService, AdalGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

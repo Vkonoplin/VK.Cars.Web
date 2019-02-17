@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  azureAd: {
+    tenant: 'd0f716c3-2ace-4ddb-82ec-81422d9aa394',
+    clientId: '84c37cca-5e75-4365-a880-707daf3f6f17',
+    redirectUri: window.location.origin,
+    endpoints: {
+      'http://localhost:5303': '286c54d7-d56d-4b8a-8656-8a4bf9a9b825'
+    },
+    navigateToLoginRequestUrl: false,
+    cacheLocation: 'localStorage'
+  }
 };
 
 /*
